@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
+from constants import BASE_URL  # Import the constant
 
 class TestNovatrPage(unittest.TestCase):
     def setUp(self):
@@ -9,8 +10,8 @@ class TestNovatrPage(unittest.TestCase):
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     def test_title(self):
-        # Navigate to the webpage
-        self.driver.get("https://www.novatr.com")
+        # Navigate to the webpage using the BASE_URL constant
+        self.driver.get(BASE_URL)
         
         # Define the expected title
         expected_title = "Online Professional Courses for Designers, Architects & Engineers | Novatr"
@@ -28,6 +29,6 @@ class TestNovatrPage(unittest.TestCase):
         # Close the browser after the test
         self.driver.quit()
 
-# Run the tests
-if __name__ == "__main__":
-    unittest.main()
+# # Run the tests
+# if __name__ == "__main__":
+#     unittest.main()

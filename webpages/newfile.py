@@ -2,7 +2,13 @@ import unittest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from constants import BASE_URL  # Import the constant
+#from util.constants import BASE_URL
+import sys
+sys.path.append('/Users/user/selenium_project/Automation-Selenium-Python/')
+
+from util.constants import BASE_URL
+
+
 
 class TestNovatrPage(unittest.TestCase):
     def setUp(self):
@@ -29,6 +35,6 @@ class TestNovatrPage(unittest.TestCase):
         # Close the browser after the test
         self.driver.quit()
 
-# # Run the tests
-# if __name__ == "__main__":
-#     unittest.main()
+# Run the tests
+if __name__ == "__main__":
+    unittest.main()

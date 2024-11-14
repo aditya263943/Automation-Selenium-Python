@@ -2,8 +2,7 @@ import unittest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-#from util.constants import BASE_URL
-import sys
+import sys 
 sys.path.append('/Users/user/selenium_project/Automation-Selenium-Python/')
 
 from util.constants import BASE_URL

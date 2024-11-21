@@ -31,8 +31,7 @@ def test_title(driver):
 # Test Case 2: Interact with a Button and Check the Outcome
 def test_interact_with_button(driver):
     driver.get(BASE_URL)
-    explore_button = driver.find_element(By.XPATH, "(//button[@color='default'][normalize-space()='Explore Courses'])[1]")
-    explore_button.click()
+    driver.find_element(By.XPATH, "(//button[@color='default'][normalize-space()='Explore Courses'])[1]").click()
     expected_url_after_click = "www.novatr.com/#Courses"
     actual_title_after_click = expected_url_after_click
     

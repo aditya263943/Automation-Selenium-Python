@@ -2,22 +2,20 @@
 
 
 # Scenario:
-
-# You need to write a Selenium-based automated test in JAVA to verify the functionality of a login form on a web application. The login page has the following elements:
+# Elements on the login page:
 # A username input field with the ID username.
 # A password input field with the ID password.
 # A submit button with the ID login-btn.
 # A login error message with the class error-msg, which appears when the credentials are incorrect.
 
-# The test needs to:
+# Test Requirements:
 # Launch the application.
-# Enter valid credentials and check for successful login (verify the presence of a dashboard element, #dashboard).
+# Enter valid credentials and check for a successful login (verify the presence of a dashboard element with the ID #dashboard).
 # Enter invalid credentials and verify that the error message appears.
 
-# Question:
-# Write the JAVA code using Selenium to automate this scenario, including appropriate wait conditions, error handling, and any assumptions you need to make (e.g., valid credentials).
+Response:
 
-Response:package Demo;
+# package Demo;
 
 import java.time.Duration;
 
